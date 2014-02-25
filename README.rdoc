@@ -1,28 +1,25 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is web application for a moleuclar biology lab database - change the databsse attributes as required.
+User model is based on Hartl's excellent Rails Tutorial
 
-Things you may want to cover:
+This is a Rails app - so install the usual stuff.
 
-* Ruby version
+sudo apt-get update
+curl -L get.rvm.io | bash -s stable
+source /home/vagrant/.rvm/scripts/rvm   <-- set this directory correctly
+rvm requirements
+rvm install 2.1.0
+gem install rails
+gem install passenger
+sudo apt-get install git
+sudo apt-get install imagemagick --fix-missing
 
-* System dependencies
+bundle install <-- once you've got the app downlaoded
+rake db:create
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+passenger start -daemonize
 
 
-Please feel free to use a different markup language if you do not plan to run
+
 <tt>rake doc:app</tt>.
