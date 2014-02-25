@@ -1,26 +1,28 @@
+
 <%= form_for :oligo do |f| %>
 
-
-  <h2>Create Oligo</h2>
+  <br>
+  <h4>Create Oligo</h4>
+  <br>
   <div class="field">
     <%= f.label "Oligo number" %>
-    <%= f.text_field :oligo_no %>
+    <%= f.text_field :oligo_no, class: 'input-xxlarge' %>
 
     <%= f.label "Name" %>
-    <%= f.text_field :name%>
+    <%= f.text_field :name, class: 'input-xxlarge'%>
 
     <%= f.label "Sequence" %>
-    <%= f.text_field :sequence%>
+    <%= f.text_field :sequence, class: 'input-xxlarge'%>
 
-    Tm (&deg;C)
-    <%= f.text_field :tm%>
+    <br>Tm (&deg;C)<br>
+    <%= f.text_field :tm, class: 'input-xxlarge'%>
 
     <%= f.label "Description" %>
-    <%= f.text_area:descrip %>
+    <%= f.text_area :descrip, class: 'input-xxlarge' %>
 
 
     <%= f.label "Designer" %>
-    <%= f.text_field :designer %>
+    <%= f.text_field :designer, class: 'input-xxlarge' %>
   </div>
 
   <%= f.submit "Create oligo", class: "btn btn-smbtn-primary" %>

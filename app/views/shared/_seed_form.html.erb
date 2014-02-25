@@ -1,28 +1,29 @@
 <%= form_for :seed do |f| %>
 
-
+  <br>
   <h2>Create Seed Record</h2>
+  <br>
   <div class="field">
     <%= f.label "Tube Number" %>
-    <%= f.text_field :tube_no%>
+    <%= f.text_field :tube_no, class: 'input-xxlarge' %>
 
     <%= f.label "Seed Collection Date" %>
-    <%= f.text_field :seed_col_date%>
+    <%= f.text_field :seed_col_date, class: 'input-xxlarge' %>
 
     <%= f.label "Parental Tubes" %>
-    <%= f.text_field :par_tube%>
+    <%= f.text_field :par_tube, class: 'input-xxlarge' %>
 
     <%= f.label "Genotype" %>
-    <%= f.text_field :genotype %>
+    <%= f.text_field :genotype, class: 'input-xxlarge'  %>
 
     <%= f.label "Description" %>
-    <%= f.text_area :descrip %>
+    <%= f.text_area :descrip, class: 'input-xxlarge'  %>
 
     <%= f.label "Sourced By" %>
-    <%= f.text_field :sourced_by %>
+    <%= f.text_field :sourced_by, class: 'input-xxlarge'  %>
 
-    GMO?
-    <%= f.text_field :GMO %>
+    <br>GMO?<br>
+    <%= f.text_field :GMO, class: 'input-xxlarge'  %>
 
 
   </div>
