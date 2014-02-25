@@ -1,0 +1,39 @@
+<% provide(:title, 'Plasmids') %>
+<h3>Plasmid Database</h3>
+
+<br>
+<br>
+   <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="plasmids">
+    <thead>                         
+      <tr>
+        <th>Ligation no.</th>                          
+        <th>Vector backbone</th>
+        <th>Insert</th>
+        <th>pUQC no.</th>
+        <th>Description</th>
+        <th>Designer</th>
+        <th>Delete?</th>
+
+        
+      </tr>
+    </thead>
+    <tbody>
+      <% @plasmids.each do |plasmids| %>       
+      <tr>
+        <td><%= plasmids.ligation  %></td>
+        <td><%= best_in_place plasmids, :ligation  %></td>
+        <td><%= best_in_place plasmids, :vec_backbone  %></td>
+        <td><%= best_in_place plasmids, :puqc %></td>
+        <td><%= best_in_place plasmids, :descrip  %></td>
+        <td><%= best_in_place plasmids, :designer  %></td>
+        <td><%= link_to "Delete", plasmids, method: :delete, data: { confirm: "You sure?" }, class: "btn btn-sm"%></td>
+
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table> 
+<br>
+<%= render 'shared/plasmid_form' %>
+
+

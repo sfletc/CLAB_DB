@@ -1,0 +1,33 @@
+<%= form_for :seed do |f| %>
+
+
+  <h2>Create Seed Record</h2>
+  <div class="field">
+    <%= f.label "Tube Number" %>
+    <%= f.text_field :tube_no%>
+
+    <%= f.label "Seed Collection Date" %>
+    <%= f.text_field :seed_col_date%>
+
+    <%= f.label "Parental Tubes" %>
+    <%= f.text_field :par_tube%>
+
+    <%= f.label "Genotype" %>
+    <%= f.text_field :genotype %>
+
+    <%= f.label "Description" %>
+    <%= f.text_area :descrip %>
+
+    <%= f.label "Sourced By" %>
+    <%= f.text_field :sourced_by %>
+
+    GMO?
+    <%= f.text_field :GMO %>
+
+
+  </div>
+
+  <%= f.submit "Create seed record", class: "btn btn-smbtn-primary" %>
+<% end %>
+
+

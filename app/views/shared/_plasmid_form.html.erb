@@ -1,0 +1,29 @@
+<%= form_for :plasmid do |f| %>
+
+
+  <h2>Create Plasmid</h2>
+  <div class="field">
+    <%= f.label "Ligation number" %>
+    <%= f.text_field :ligation%>
+
+    <%= f.label "Vector backbone" %>
+    <%= f.text_field :vec_backbone%>
+
+    <%= f.label "Insert" %>
+    <%= f.text_field :insert%>
+
+    pUQC number
+    <%= f.text_field :puqc %>
+
+    <%= f.label "Description" %>
+    <%= f.text_area :descrip %>
+
+
+    <%= f.label "Designer" %>
+    <%= f.text_field :designer %>
+  </div>
+
+  <%= f.submit "Create plasmid", class: "btn btn-smbtn-primary" %>
+<% end %>
+
+

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tube_no: MyString
+  seed_col_date: MyString
+  par_tube: MyString
+  genotype: MyString
+  descrip: MyString
+  sourced_by: MyString
+  GMO: MyString
+
+two:
+  tube_no: MyString
+  seed_col_date: MyString
+  par_tube: MyString
+  genotype: MyString
+  descrip: MyString
+  sourced_by: MyString
+  GMO: MyString

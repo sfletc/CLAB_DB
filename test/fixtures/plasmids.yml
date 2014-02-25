@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ligation: MyString
+  vec_backbone: MyString
+  insert: MyString
+  puqc: MyString
+  descrip: MyString
+  designer: MyString
+
+two:
+  ligation: MyString
+  vec_backbone: MyString
+  insert: MyString
+  puqc: MyString
+  descrip: MyString
+  designer: MyString

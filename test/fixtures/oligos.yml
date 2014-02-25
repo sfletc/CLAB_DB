@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  oligo_no: MyString
+  name: MyString
+  sequence: MyString
+  tm: MyString
+  descrip: MyString
+  designer: MyString
+
+two:
+  oligo_no: MyString
+  name: MyString
+  sequence: MyString
+  tm: MyString
+  descrip: MyString
+  designer: MyString
