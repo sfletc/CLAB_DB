@@ -6,16 +6,25 @@ User model is based on Hartl's excellent Rails Tutorial
 This is a Rails app - so install the usual stuff.
 
 sudo apt-get update
+
 curl -L get.rvm.io | bash -s stable
+
 source /home/vagrant/.rvm/scripts/rvm   <-- set this directory correctly
+
 rvm requirements
+
 rvm install 2.1.0
+
 gem install rails
+
 gem install passenger
+
 sudo apt-get install git
+
 sudo apt-get install imagemagick --fix-missing
 
 bundle install <-- once you've got the app downlaoded
+
 rake db:create
 
 passenger start -daemonize
