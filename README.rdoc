@@ -1,6 +1,6 @@
 == README
 
-This is web application for a moleuclar biology lab database - change the databsse attributes as required.
+This is web application for a moleuclar biology lab database - change the database attributes as required.
 User model is based on Hartl's excellent Rails Tutorial
 
 This is a Rails app - so install the usual stuff.
