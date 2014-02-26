@@ -15,6 +15,9 @@ database.yml
 doc/
 *.swp
 *~
+
+/public/uploads/*
+
 .project
 .DS_Store
 .idea
