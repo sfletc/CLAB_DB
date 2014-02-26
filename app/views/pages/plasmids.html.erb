@@ -12,7 +12,7 @@
         <th>pUQC no.</th>
         <th>Description</th>
         <th>Designer</th>
-        <th>Delete?</th>
+        <th>Operations</th>
 
         
       </tr>
@@ -26,7 +26,8 @@
         <td><%= best_in_place plasmids, :puqc %></td>
         <td><%= best_in_place plasmids, :descrip  %></td>
         <td><%= best_in_place plasmids, :designer  %></td>
-        <td><%= link_to "Delete", plasmids, method: :delete, data: { confirm: "You sure?" }, class: "btn btn-sm"%></td>
+        <td><%= link_to "Delete", plasmids, method: :delete, data: { confirm: "You sure?" }, class: "btn btn-sm"%>
+        <%= link_to 'Download', download_plasmid_path(plasmids.id), class: "btn btn-sm" %></td>
 
         
       </tr>

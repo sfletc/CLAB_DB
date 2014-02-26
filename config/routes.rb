@@ -2,13 +2,16 @@ ClabDb::Application.routes.draw do
   
   #get "oligo_up/oligo_up"
   #get "experiment_data/import"
+
+
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
   resources :oligos, only: [:new, :create, :update, :destroy]
   resources :plasmids, only: [:new, :create, :update, :destroy]
   resources :seeds, only: [:new, :create, :update, :destroy]
-
   
+
+
   #resources :mynewdata, only: [:create, :destroy] 
 
   #resources :mynewdata do
@@ -30,7 +33,10 @@ ClabDb::Application.routes.draw do
   match '/seeds', to: 'pages#seeds', via: 'get'
   match '/oligos', to: 'pages#oligos', via: 'get'
   
-
+  resources :plasmids do
+    get 'download', on: :member
+  end
+  
   
 
   # The priority is based upon order of creation: first created -> highest priority.

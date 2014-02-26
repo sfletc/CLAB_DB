@@ -75,6 +75,9 @@ class PlasmidsController < ApplicationController
 #     end
 # end
 
+ 
+
+
   def index
 
   end
@@ -113,10 +116,16 @@ class PlasmidsController < ApplicationController
     redirect_to (:back), :alert => "You can only delete a plasmid you uploaded!"
   end
 
+  def download
+    @plasmid = Plasmid.find(params[:id])
+    send_file(@plasmid.gbkcw.path)
+  end
+    
+
   private
 
   def plasmid_params
-    params.require(:plasmid).permit(:ligation, :vec_backbone, :insert, :puqc, :descrip, :designer)
+    params.require(:plasmid).permit(:ligation, :vec_backbone, :insert, :puqc, :descrip, :designer, :gbkcw)
   end
 
   def correct_user

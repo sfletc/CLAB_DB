@@ -52,5 +52,7 @@ class PagesController < ApplicationController
   def index
     #@oligo = Oligo.all
   end
+
+
   
 end
