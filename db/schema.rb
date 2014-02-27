@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140225231112) do
+ActiveRecord::Schema.define(version: 20140227063951) do
 
   create_table "oligos", force: true do |t|
     t.string   "oligo_no"
@@ -26,7 +26,6 @@ ActiveRecord::Schema.define(version: 20140225231112) do
   end
 
   create_table "plasmids", force: true do |t|
-    t.string   "ligation"
     t.string   "vec_backbone"
     t.string   "insert"
     t.string   "puqc"
@@ -40,6 +39,7 @@ ActiveRecord::Schema.define(version: 20140225231112) do
     t.integer  "gbk_file_size"
     t.datetime "gbk_updated_at"
     t.string   "gbkcw"
+    t.integer  "ligation"
   end
 
   create_table "seeds", force: true do |t|

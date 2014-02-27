@@ -118,7 +118,12 @@ class PlasmidsController < ApplicationController
 
   def download
     @plasmid = Plasmid.find(params[:id])
-    send_file(@plasmid.gbkcw.path)
+    if @plasmid.gbkcw.blank?
+      flash[:alert] = "No Genbank file present"
+      redirect_to plasmids_url
+    else
+      send_file(@plasmid.gbkcw.path)
+    end
   end
     
 

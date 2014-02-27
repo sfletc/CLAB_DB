@@ -1,4 +1,5 @@
 class Plasmid < ActiveRecord::Base
+	default_scope -> { order('id ASC') }
 	belongs_to :user
 	validates :user_id, presence: true
 	# has_attached_file :gbk

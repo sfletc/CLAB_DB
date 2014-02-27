@@ -17,4 +17,5 @@
  *= require dataTables/extras/TableTools
  *= require dataTables/extras/TableTools_JUI
  *= require_tree . 
+ *= require jquery.dataTables.yadcf
  */
