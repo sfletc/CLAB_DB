@@ -23,8 +23,17 @@
     <%= f.label "Designer" %>
     <%= f.text_field :designer, class: 'input-xxlarge'  %>
 
-    <%= f.label :gbkcw, "Genebank file" %>
-    <%= f.file_field :gbkcw, class: 'input-xxlarge' %>
+    <br>
+    <div class="fileupload fileupload-new" data-provides="fileupload">
+      <span class="fileupload-preview"></span>
+        <span class="btn btn-file">
+          <span class="fileupload-new">Select Genbank File</span>
+            <%= f.file_field :gbkcw %>
+          </span>
+        </span>
+       </span>
+    </div>
+    <br>    
   </div>
 
   <%= f.submit "Create plasmid", class: "btn btn-smbtn-primary" %>

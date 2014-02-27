@@ -22,6 +22,7 @@ gem 'jbuilder', '1.0.2'
 gem 'best_in_place', github: 'bernat/best_in_place' 
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git" #remove if carrierwave is better
 gem 'carrierwave'
+gem 'jasny_bootstrap_extension_rails'
 
 group :development, :test do
   gem 'sqlite3', '1.3.8'

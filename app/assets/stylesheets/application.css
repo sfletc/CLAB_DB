@@ -10,6 +10,7 @@
  *
 
  *= require_self
+ *= require jasny-bootstrap
  *= require jquery.ui.core
  *= require jquery.ui.theme
  *= require dataTables/jquery.dataTables
